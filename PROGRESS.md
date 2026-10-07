@@ -7,11 +7,12 @@
 - Color space: Linear
 - Asset serialization: Force Text (good for Git)
 - Dev machine: macOS 26.6, Apple Silicon (arm64)
-- Target device: **TBD** (recommended: Mac desktop, 60 FPS)
+- Target device: Mac desktop, 60 FPS (assumed; Imran did not object)
 - Camera perspective: **TBD – must confirm before movement/camera lessons**
 - Scenes: only the template `SampleScene`
-- Assets: none imported yet
-- Git: not initialised yet
+- Assets: 3 Quaternius Standard packs downloaded to `~/Desktop/unity/EchoAssets_Raw` (none imported yet)
+- Git: initialised, remote `github.com/scoopy05/Echo`, branch `main`, first commit `a2bbc52`
+- Version control: GitHub only. `com.unity.collab-proxy` (Unity Version Control) is installed but unused.
 - Reference image (wooden study): not yet attached
 
 ## Roadmap
@@ -29,21 +30,23 @@
 12. Demo, README, portfolio
 
 ## Completed features / concepts practised
-- (none yet)
+- Git setup: `.gitignore`, `.meta` files, first commit and push. Verified: no Library/Temp/csproj tracked.
 
 ## Current checkpoint
-- Lesson 1: Git checkpoint. Test result: **pending**
+- Lesson 1: Git checkpoint. Test result: **passed** (working tree clean, pushed)
+- Lesson 2: Asset download + audit. Test result: **passed** (3 packs, CC0, rigs match by bone names)
+- Next: camera perspective decision
 
 ## Known bugs
 - (none)
 
 ## Asset inventory
-| Need | Asset / source | Licence | Clips | Import status | Remaining |
-|------|----------------|---------|-------|---------------|-----------|
-| (audit not started) | | | | | |
+See [ASSETS.md](ASSETS.md). Key gaps: no Echo model, no security-robot model, no strafe/backward clips.
 
 ## Decisions and reasons
 - Input System (new) is already active, so we use it, not the old `Input.GetKey`.
+- Raw asset packs live outside the project (`~/Desktop/unity/EchoAssets_Raw`); only used files get imported.
+- Use one version-control system (GitHub) to avoid two systems fighting over the same files.
 
 ## Next small step
-- Finish Lesson 1, then audit assets and confirm camera perspective.
+- Confirm camera perspective, then start the test scene (player object + components).
