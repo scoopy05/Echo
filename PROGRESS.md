@@ -8,7 +8,7 @@
 - Asset serialization: Force Text (good for Git)
 - Dev machine: macOS 26.6, Apple Silicon (arm64)
 - Target device: Mac desktop, 60 FPS (assumed; Imran did not object)
-- Camera perspective: **TBD – must confirm before movement/camera lessons**
+- Camera perspective: **A – free third-person orbit** (chosen 2026-10-07)
 - Scenes: only the template `SampleScene`
 - Assets: 3 Quaternius Standard packs downloaded to `~/Desktop/unity/EchoAssets_Raw` (none imported yet)
 - Git: initialised, remote `github.com/scoopy05/Echo`, branch `main`, first commit `a2bbc52`
@@ -34,8 +34,8 @@
 
 ## Current checkpoint
 - Lesson 1: Git checkpoint. Test result: **passed** (working tree clean, pushed)
-- Lesson 2: Asset download + audit. Test result: **passed** (3 packs, CC0, rigs match by bone names)
-- Next: camera perspective decision
+- Lesson 2: Asset download + audit. Test result: **passed** (commit `a2ef13a`)
+- Lesson 3: Sandbox scene + Player hierarchy (root + Visual child). Test result: **pending**
 
 ## Known bugs
 - (none)
@@ -47,6 +47,8 @@ See [ASSETS.md](ASSETS.md). Key gaps: no Echo model, no security-robot model, no
 - Input System (new) is already active, so we use it, not the old `Input.GetKey`.
 - Raw asset packs live outside the project (`~/Desktop/unity/EchoAssets_Raw`); only used files get imported.
 - Use one version-control system (GitHub) to avoid two systems fighting over the same files.
+- Camera A (free orbit): most immersive. Costs: camera-wall collision needed; stealth readability must come from UI/markers/sound rather than overview.
+- Work with current free assets; swap models later. To make swapping cheap, gameplay components live on the Player root, the model lives in a `Visual` child.
 
 ## Next small step
-- Confirm camera perspective, then start the test scene (player object + components).
+- Finish Lesson 3, then choose CharacterController vs Rigidbody and read input.
