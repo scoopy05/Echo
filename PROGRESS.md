@@ -35,7 +35,10 @@
 ## Current checkpoint
 - Lesson 1: Git checkpoint. Test result: **passed** (working tree clean, pushed)
 - Lesson 2: Asset download + audit. Test result: **passed** (commit `a2ef13a`)
-- Lesson 3: Sandbox scene + Player hierarchy (root + Visual child). Test result: **pending**
+- Lesson 3: Sandbox scene + Player hierarchy. Test result: **passed** (commit `be5eb93`)
+- Lesson 4: CharacterController and basic script. Test result: **passed**
+- Lesson 5: Reading input and moving. Test result: **passed**
+- Lesson 6: Rotation and Gravity. Test result: **pending**
 
 ## Known bugs
 - (none)
@@ -51,4 +54,4 @@ See [ASSETS.md](ASSETS.md). Key gaps: no Echo model, no security-robot model, no
 - Work with current free assets; swap models later. To make swapping cheap, gameplay components live on the Player root, the model lives in a `Visual` child.
 
 ## Next small step
-- Finish Lesson 3, then choose CharacterController vs Rigidbody and read input.
+- Finish Lesson 6: Add rotation and gravity to movement.
