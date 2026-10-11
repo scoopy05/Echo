@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
     public InputActionReference moveAction;
     public Transform cameraTransform;
+    public Animator animator;        // NEW: reference to the character's Animator
 
     [Header("Settings")]
     public float moveSpeed = 5f;
@@ -57,5 +58,9 @@ public class PlayerMovement : MonoBehaviour
         // 5. Move the character
         Vector3 finalMovement = new Vector3(direction.x * moveSpeed, verticalVelocity, direction.z * moveSpeed);
         controller.Move(finalMovement * Time.deltaTime);
+
+        // 6. Tell the Animator how fast we're moving
+        float currentSpeed = new Vector2(input.x, input.y).magnitude;
+        animator.SetFloat("Speed", currentSpeed);
     }
 }
