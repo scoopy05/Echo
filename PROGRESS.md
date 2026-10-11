@@ -16,7 +16,7 @@
 - Reference image (wooden study): not yet attached
 
 ## Roadmap
-1. Project inspection, setup, Git, asset audit  <- we are here
+1. Project inspection, setup, Git, asset audit
 2. Test scene, player movement, collisions, camera
 3. Lighting practice room + early build
 4. Player animation + interaction
@@ -38,7 +38,9 @@
 - Lesson 3: Sandbox scene + Player hierarchy. Test result: **passed** (commit `be5eb93`)
 - Lesson 4: CharacterController and basic script. Test result: **passed**
 - Lesson 5: Reading input and moving. Test result: **passed**
-- Lesson 6: Rotation and Gravity. Test result: **pending**
+- Lesson 6: Rotation and Gravity. Test result: **passed** (commit `d6375a0`)
+- Lesson 7: Free orbit camera (Cinemachine). Test result: **passed**
+- Lesson 8: Import character model + animations. Test result: **pending**  <- we are here
 
 ## Known bugs
 - (none)
@@ -54,4 +56,4 @@ See [ASSETS.md](ASSETS.md). Key gaps: no Echo model, no security-robot model, no
 - Work with current free assets; swap models later. To make swapping cheap, gameplay components live on the Player root, the model lives in a `Visual` child.
 
 ## Next small step
-- Finish Lesson 6: Add rotation and gravity to movement.
+- Lesson 8: Import a character model from our asset packs, replace the capsule, and set up basic idle/walk animations.
