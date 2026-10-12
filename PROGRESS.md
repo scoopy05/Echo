@@ -40,7 +40,8 @@
 - Lesson 5: Reading input and moving. Test result: **passed**
 - Lesson 6: Rotation and Gravity. Test result: **passed** (commit `d6375a0`)
 - Lesson 7: Free orbit camera (Cinemachine). Test result: **passed**
-- Lesson 8: Import character model + animations. Test result: **pending**  <- we are here
+- Lesson 8: Import character model + animations. Test result: **passed**
+- Lesson 9: Locomotion polish (Sprint/Crouch) or Lighting practice room. Test result: **pending**  <- we are here
 
 ## Known bugs
 - (none)
@@ -56,4 +57,4 @@ See [ASSETS.md](ASSETS.md). Key gaps: no Echo model, no security-robot model, no
 - Work with current free assets; swap models later. To make swapping cheap, gameplay components live on the Player root, the model lives in a `Visual` child.
 
 ## Next small step
-- Lesson 8: Import a character model from our asset packs, replace the capsule, and set up basic idle/walk animations.
+- Lesson 9: Add Sprint & Crouch locomotion (or start the Sci-Fi Lighting Practice Room).
