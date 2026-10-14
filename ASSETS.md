@@ -17,7 +17,7 @@ CC0 = public domain; credit "Quaternius" in the game credits as courtesy.
 |------|----------------|--------|---------|-------|---------------|----------------|
 | Player model | `Superhero_Male_FullBody.fbx` or `Superhero_Female_FullBody.fbx` (only these 2 in free version) | Base Characters | CC0 | – | Not imported | Choose one; set Humanoid rig; URP materials |
 | Player animations | `UAL1_Standard.fbx` (in-place) and `UAL1_Standard_RM.fbx` (root motion), 23 MB each | Animation Library | CC0 | see list below | Not imported | Import one file as Humanoid; verify retarget |
-| Walls, floors, doors, props | MegaKit FBX: 84 walls, 37 platforms (incl. `Door_Simple`, `Door_DarkMetal`), 28 props (`Prop_Computer`, `Prop_AccessPoint`, `Prop_Light_*`, `Prop_Fan_Small`, crates, vents), 8 columns, 29 decals | MegaKit | CC0 | – | Not imported | Import a subset when building lighting room |
+| Walls, floors, doors, props | Modular Sci-Fi MegaKit: starter set (Platform_Metal, WallAstra_Straight, WallAstra_Corner, Door_Frame_Square, Prop_Crate3, Prop_Vent_Small, Prop_Light_Wide, Trim textures) | MegaKit | CC0 | – | Starter set imported into `Assets/Environment/` | Build modular room, set up materials & lighting |
 | Echo (floating companion) | **None** | – | – | – | Gap | Build from primitives + emissive "eye"; procedural hover |
 | Security robots (x2) | **None** (MegaKit has 3 alien models, not robots) | – | – | – | Gap | Primitive-based robot, or audit another pack later |
 | Sounds | Kenney Sci-fi Sounds | – | – | – | Not downloaded | Download when audio lesson starts |
