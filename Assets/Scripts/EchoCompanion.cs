@@ -146,6 +146,10 @@ public class EchoCompanion : MonoBehaviour
             deployTargetPos = hit.point + (hit.normal * 0.6f);
             currentState = EchoState.Deploying;
             SetDroneColor(distractColor, 2.5f);
+            Debug.Log(
+    "Ray hit: " + hit.collider.name +
+    " | Distance: " + hit.distance
+);
         }
     }
 
@@ -269,7 +273,7 @@ public class EchoCompanion : MonoBehaviour
         // Draw a small, crisp reticle dot in center screen
         float size = 6f;
         float x = (Screen.width - size) * 0.5f;
-        float y = (Screen.height - size) * 0.5f;
+        float y = ((Screen.height - size) * 0.5f);
 
         GUI.color = new Color(0.3f, 0.9f, 1f, 0.75f);
         GUI.DrawTexture(new Rect(x, y, size, size), Texture2D.whiteTexture);
